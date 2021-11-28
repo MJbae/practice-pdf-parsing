@@ -15,6 +15,17 @@ if __name__ == '__main__':
     contents = raw_pdf['content']
     contents = contents.strip()
 
-    print(contents)
+    starting_index_of_crop = contents.find('Ⅰ')
+    starting_index_of_vegetable = contents.find('Ⅱ')
+    starting_index_of_fruit = contents.find('Ⅲ')
+    crop_content = contents[starting_index_of_crop:starting_index_of_vegetable]
+    vegetable_content = contents[starting_index_of_vegetable:starting_index_of_fruit]
+    fruit_content = contents[starting_index_of_fruit:starting_index_of_fruit + 200]
+    print("--- crop --- ")
+    print(crop_content)
+    print("--- vegetable --- ")
+    print(vegetable_content)
+    print("--- fruit --- ")
+    print(fruit_content)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
