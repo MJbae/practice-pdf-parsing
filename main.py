@@ -1,12 +1,5 @@
 from tika import parser
 
-
-# coding=utf-8
-def print_hi(name):
-    print("Hi, {0}".format(name))
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     pdf_path = "test.pdf"
 
@@ -27,5 +20,3 @@ if __name__ == '__main__':
     print(vegetable_content)
     print("--- fruit --- ")
     print(fruit_content)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
